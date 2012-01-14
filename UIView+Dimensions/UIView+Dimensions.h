@@ -20,5 +20,10 @@
 @property (nonatomic) CGFloat CenterY;
 @property (nonatomic) CGPoint CenterInBounds;
 @property (nonatomic) CGSize Size;
+@property (nonatomic) CGPoint Origin;
+@property (nonatomic) CGPoint TopLeft;
+@property (nonatomic) CGPoint TopRight;
+@property (nonatomic) CGPoint BottomLeft;
+@property (nonatomic) CGPoint BottomRight;
 
 @end
