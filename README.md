@@ -23,6 +23,10 @@ NSDictionary+SafeAccess
 -----------------------
 Collection of methods extending NSDictionary with error checks for safely accessing NSDictionary items
 
+NSObject+NSCoding
+-----------------------
+Enhanced version of NSObject+NSCoding from https://github.com/greenisus/NSObject-NSCoding
+
 NotificationAlert
 -----------------
 UIView subclass which allows you to show black translucent rounded rectangle with the text and optionally image/spinner in the center of screen
