@@ -58,7 +58,7 @@ static const char * Key##Name = #Name; \
 \
 - (void) set##Name:(type)value \
 {\
-    objc_setAssociatedObject(self, Key##Name, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC); \
+	objc_setAssociatedObject(self, Key##Name, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC); \
 }\
 \
 - (type) Name \
