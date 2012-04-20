@@ -24,6 +24,8 @@
  *
  * @end
  *
+ * // .m file
+ *
  * @implementation SomeClass (MyCategory)
  *
  * IMPLEMENT_RETAIN_PROPERTY(NSString *, MyNewProperty)
