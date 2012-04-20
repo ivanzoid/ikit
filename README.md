@@ -11,6 +11,10 @@ CameraView
 ----------
 UIView subclass which shows real-time video feed from camera using AVFoundation API
 
+Lambda-Alert
+----------
+Enhanced version of Lambda-Alert from https://github.com/zoul/Lambda-Alert
+
 MemView
 -------
 UIView subclass which shows current memory usage of application and available free memory in the system
@@ -18,6 +22,10 @@ UIView subclass which shows current memory usage of application and available fr
 NSDictionary+SafeAccess
 -----------------------
 Collection of methods extending NSDictionary with error checks for safely accessing NSDictionary items
+
+NSObject+NSCoding
+-----------------------
+Enhanced version of NSObject+NSCoding from https://github.com/greenisus/NSObject-NSCoding
 
 NotificationAlert
 -----------------

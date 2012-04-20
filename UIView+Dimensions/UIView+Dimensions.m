@@ -164,8 +164,8 @@
 
 - (void) setBottomRight:(CGPoint)bottomRight
 {
-	self.X = bottomRight.x + self.Width;
-	self.Y = bottomRight.y + self.Height;
+	self.X = bottomRight.x - self.Width;
+	self.Y = bottomRight.y - self.Height;
 }
 
 - (CGPoint) BottomRight
