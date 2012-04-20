@@ -8,8 +8,48 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
+/*
+ * Macro below will allow you to add any property to any class in your program.
+ * Important note: property name shall start with capitalized letter (i.e. 'MyPropertyName' and not 'myPropertyName')
+ *
+ * =========================================
+ *
+ * Typical usage:
+ *
+ * // .h file
+ *
+ * @interface SomeClass (MyCategory)
+ *
+ * @property (nonatomic, retain) NSString *MyNewProperty;
+ *
+ * @end
+ *
+ * @implementation SomeClass (MyCategory)
+ *
+ * IMPLEMENT_RETAIN_PROPERTY(NSString *, MyNewProperty)
+ *
+ * - (void) someFunction
+ * {
+ *     ...
+ *
+ *     self.MyNewProperty = @"lalala";
+ * }
+ *
+ * - (void) anotherFunction
+ * {
+ *     ...
+ *
+ *     // Use stored MyNewProperty
+ *
+ *     foo = self.MyNewProperty;
+ *
+ *     ...
+ * }
+ *
+ */
+
 //
-// Importang note: use only property names with first letter capitalized! (i.e. 'name' -> 'Name')
+// Important note: property name shall start with capitalized letter (i.e. 'MyPropertyName' and not 'myPropertyName')
 //
 #define IMPLEMENT_RETAIN_PROPERTY(type, Name) \
 static const char * Key##Name = #Name; \

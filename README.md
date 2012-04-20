@@ -24,8 +24,12 @@ NSDictionary+SafeAccess
 Collection of methods extending NSDictionary with error checks for safely accessing NSDictionary items
 
 NSObject+NSCoding
------------------------
+-----------------
 Enhanced version of NSObject+NSCoding from https://github.com/greenisus/NSObject-NSCoding
+
+NSObject+Property
+-----------------
+Contains useful macro which will allow you to add any property to any class in your program
 
 NotificationAlert
 -----------------
