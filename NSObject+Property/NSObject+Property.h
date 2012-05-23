@@ -54,14 +54,15 @@
 // Important note: property name shall start with capitalized letter (i.e. 'MyPropertyName' and not 'myPropertyName')
 //
 #define IMPLEMENT_RETAIN_PROPERTY(type, Name) \
-static const char * Key##Name = #Name; \
+static const char * Key##Name; \
 \
 - (void) set##Name:(type)value \
 {\
-	objc_setAssociatedObject(self, Key##Name, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC); \
+	objc_setAssociatedObject(self, & Key##Name, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC); \
 }\
 \
 - (type) Name \
 {\
-	return objc_getAssociatedObject(self, Key##Name); \
+	return objc_getAssociatedObject(self, & Key##Name); \
 }\
+
